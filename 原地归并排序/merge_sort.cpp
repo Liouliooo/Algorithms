@@ -33,7 +33,7 @@ void merge(int *a,int n,int mid)
     {
         while (fir<sec && a[fir]<=a[sec]) { fir++; }
         int step = 0;
-        while (fir<sec && a[fir]>a[sec])
+        while (sec<n && a[fir]>a[sec])
         {
             step++;
             sec++;
