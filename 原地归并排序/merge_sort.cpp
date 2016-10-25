@@ -5,7 +5,7 @@ using namespace std;
 // reverse the array,反转数组
 void reverse(int *a,int n)
 {
-    int i = 0, mid = n/2;
+    int i = 0, mid = (n-1)/2;
     if (n <= 1) { return ; }
     for (i=0; i<mid; i++)
     {
