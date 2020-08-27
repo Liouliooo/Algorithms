@@ -43,11 +43,12 @@ void merge(int *a,int n,int mid)
     }
 }
 
-// 归并排序，时间复杂度O(nlogn),空间复杂度O(1).
+// 归并排序，时间复杂度O(nlogn), 空间复杂度O(1).
 void merge_sort(int *a, int n)
 {
     if (n<=1) { return ; }
     int mid = n/2;
+    
     merge_sort(a,mid);
     merge_sort(a+mid,n-mid);
     merge(a,n,mid);
